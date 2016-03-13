@@ -1,5 +1,8 @@
 squid:
+<<<<<<< HEAD
   restart: always
+=======
+>>>>>>> branch 'master' of git@github.com:nouchka/docker-proxy.git
   image: "nouchka/squid"
   container_name: "proxy"
   ports:
