@@ -1,0 +1,11 @@
+squid:
+  image: "nouchka/squid"
+  container_name: "proxy"
+  ports:
+    - 3128:3128
+  links:
+    - privoxy
+privoxy:
+  image: "nouchka/privoxy"
+  volumes:
+    - ./privoxy/custom:/etc/privoxy/custom
